@@ -1,7 +1,5 @@
 # Library Manager System Coursework
 
-建议仓库名：`library-manager-system-coursework`
-
 这是一个基于 Spring Boot、Thymeleaf、MyBatis 和 MySQL 的图书管理系统课程项目。系统包含普通用户端和管理员端，支持登录、图书查询、借书、还书、图书分类管理、用户管理、借阅记录查看、个人信息维护、CSV 数据导出等功能。
 
 ## 项目结构
@@ -81,25 +79,3 @@ mvn test
 已整理的测试截图和日志位于：
 
 [docs/coursework/actual_test_results](docs/coursework/actual_test_results)
-
-## 本次整理新增的关键文件
-
-- `README.md`
-- `SUBMISSION_CHECKLIST.md`
-- `docs/coursework/README.md`
-- `src/main/java/com/zbw/controller/LibraryController.java`
-- `src/main/java/com/zbw/utils/export/CsvExportUtil.java`
-- `src/main/resources/static/scripts/common/ajaxHelper.js`
-- `src/test/java/com/zbw/DetailedBusinessTest.java`
-- `src/test/java/com/zbw/CsvExportUtilTest.java`
-
-## Git 提交建议
-
-```bash
-git init
-git add .
-git commit -m "complete library manager coursework deliverable"
-git branch -M main
-git remote add origin <remote-repository-url>
-git push -u origin main
-```
