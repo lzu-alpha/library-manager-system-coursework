@@ -1,0 +1,52 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Build output
+target/
+out/
+build/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary generated checks
+docx_render_check/
+
+# Root-level duplicated coursework artifacts are consolidated under docs/coursework
+/actual_test_results/
+/additional_function_screenshots/
+/frontend_screenshots/
+/initial_integration_screenshots/
+/assets/
+/docs_images/
+/tools/
+/build_system_report.py
+/build_system_report_full.py
+/分项确认稿_*.md
+/分项补充_*.md
+/模块内联调_*.md
+/软件工程实验文档_*
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

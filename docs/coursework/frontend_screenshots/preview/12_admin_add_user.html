@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><title>图书管理系统</title>
+<link rel="stylesheet" href="/layui/css/layui.css"><style>
+body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;background:#f6f7fb;color:#222}
+.login-bg{min-height:760px;background:#eef3f9 url('/images/background.png') center/cover no-repeat;padding-top:70px}
+.login-card{width:420px;margin:0 auto;padding:34px 34px 28px;background:rgba(242,242,242,.94);border-radius:4px;box-shadow:0 10px 32px rgba(0,0,0,.18)}
+.login-title{font-size:30px;color:#c40000;margin:0 0 14px}
+.login-subtitle{font-size:22px;margin:0 0 28px}
+.layui-body{padding:24px 32px}
+.page-title{font-size:28px;font-weight:600;margin:0;text-align:center}
+.section-title{font-size:24px;font-weight:600;margin:0}
+.panel{background:#fff;border:1px solid #e6e6e6;border-radius:3px;padding:22px;margin-top:18px}
+.home-hero{background:#fff;padding:56px;border-radius:3px;border:1px solid #e6e6e6}
+.home-hero h1{font-size:34px;margin:0 0 16px}
+.home-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.home-card{padding:22px;background:#f8fbff;border:1px solid #dce7f7;border-radius:3px}
+.home-card strong{display:block;font-size:20px;margin-bottom:8px;color:#009688}
+.split{display:grid;grid-template-columns:320px 1fr;gap:44px;align-items:start}
+.form-card{background:#fff;border:1px solid #e6e6e6;border-radius:3px;padding:24px}
+.center-form{width:480px;margin:20px auto;background:#f2f2f2;padding:28px 32px;border-radius:3px}
+.data-table th,.data-table td{text-align:center}
+.pagination{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:14px}
+.avatar{width:32px;height:32px;border-radius:50%;vertical-align:middle;margin-right:8px}
+.layui-layout-admin .layui-header .brand{float:left;color:#009688;font-size:24px;line-height:60px;padding-left:24px}
+</style></head>
+<body class="layui-layout-body"><div class="layui-layout layui-layout-admin">
+<div class="layui-header"><div class="brand">图 书 管 理 系 统</div><ul class="layui-nav layui-layout-right">
+<li class="layui-nav-item"><a href="javascript:;"><img src="/images/user_image.jpg" class="layui-nav-img">admin</a></li>
+<li class="layui-nav-item"><a href="/adminLogOut">退出登录</a></li></ul></div>
+<div class="layui-side layui-bg-black"><div class="layui-side-scroll"><ul class="layui-nav layui-nav-tree">
+<li class="layui-nav-item "><a href="javascript:;">书籍管理</a><dl class="layui-nav-child">
+<dd class=""><a href="/addBookPage">&emsp;&emsp;录入新书</a></dd>
+<dd class=""><a href="/addCategoryPage?pageNum=1">&emsp;&emsp;新建类别</a></dd>
+<dd class=""><a href="/showBooksPage">&emsp;&emsp;查询书籍</a></dd></dl></li>
+<li class="layui-nav-item layui-nav-itemed"><a href="javascript:;">用户管理</a><dl class="layui-nav-child">
+<dd class=""><a href="/showUsersPage?pageNum=1">&emsp;&emsp;查询用户</a></dd>
+<dd class="layui-this"><a href="/addUserPage">&emsp;&emsp;新增用户</a></dd></dl></li>
+<li class="layui-nav-item "><a href="javascript:;">借阅信息</a><dl class="layui-nav-child">
+<dd class=""><a href="/allBorrowBooksRecordPage?pageNum=1">&emsp;&emsp;所有记录</a></dd></dl></li>
+<li class="layui-nav-item "><a href="/adminInfoPage">个人信息</a></li></ul></div></div>
+<div class="layui-body"><div class="center-form"><hr class="layui-bg-blue"><h2 class="page-title">新增用户</h2><hr class="layui-bg-blue"><form class="layui-form"><div class="layui-form-item"><label class="layui-form-label">用户名</label><div class="layui-input-block"><input class="layui-input" value="newUser"></div></div><div class="layui-form-item"><label class="layui-form-label">密码</label><div class="layui-input-block"><input class="layui-input" value="123456"></div></div><div class="layui-form-item"><label class="layui-form-label">邮箱</label><div class="layui-input-block"><input class="layui-input" value="new@example.com"></div></div><div style="text-align:center"><button class="layui-btn">添加用户</button></div></form></div></div></div><script src="/layui/layui.js"></script></body></html>

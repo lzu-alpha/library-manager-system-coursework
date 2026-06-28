@@ -1,0 +1,35 @@
+﻿bigHomework_Lostfound-main actual test execution log
+Time: 2026-06-28 14:40:15
+
+[1] Build file check
+No Maven/Gradle build file found.
+
+[2] Spring Boot application and Controller check
+No Spring Boot main application class or main Controller found under src/main/java.
+
+[3] Runnable artifact check
+No .class or .jar runnable artifact found.
+
+[4] Test source check
+BookCategoryMapperTest.java
+BookServiceTest.java
+BorrowingBooksMapperTest.java
+DemoApplicationTests.java
+TestController.java
+UserTest.java
+
+[5] Toolchain check
+java = NOT FOUND
+javac = NOT FOUND
+mvn = NOT FOUND
+
+[6] Attempt to run mvn test
+The term 'mvn' is not recognized as the name of a cmdlet, function, script file, or operable program.
+
+Final result
+Unit tests and UI tests cannot be executed from the current project state.
+Blocking reasons:
+- no Maven/Gradle build file
+- no Spring Boot application entry or main Controller under src/main/java
+- no compiled .class/.jar artifact
+- java/javac/mvn are not available in the current shell environment

@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><title>图书管理系统</title>
+<link rel="stylesheet" href="/layui/css/layui.css"><style>
+body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;background:#f6f7fb;color:#222}
+.login-bg{min-height:760px;background:#eef3f9 url('/images/background.png') center/cover no-repeat;padding-top:70px}
+.login-card{width:420px;margin:0 auto;padding:34px 34px 28px;background:rgba(242,242,242,.94);border-radius:4px;box-shadow:0 10px 32px rgba(0,0,0,.18)}
+.login-title{font-size:30px;color:#c40000;margin:0 0 14px}
+.login-subtitle{font-size:22px;margin:0 0 28px}
+.layui-body{padding:24px 32px}
+.page-title{font-size:28px;font-weight:600;margin:0;text-align:center}
+.section-title{font-size:24px;font-weight:600;margin:0}
+.panel{background:#fff;border:1px solid #e6e6e6;border-radius:3px;padding:22px;margin-top:18px}
+.home-hero{background:#fff;padding:56px;border-radius:3px;border:1px solid #e6e6e6}
+.home-hero h1{font-size:34px;margin:0 0 16px}
+.home-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.home-card{padding:22px;background:#f8fbff;border:1px solid #dce7f7;border-radius:3px}
+.home-card strong{display:block;font-size:20px;margin-bottom:8px;color:#009688}
+.split{display:grid;grid-template-columns:320px 1fr;gap:44px;align-items:start}
+.form-card{background:#fff;border:1px solid #e6e6e6;border-radius:3px;padding:24px}
+.center-form{width:480px;margin:20px auto;background:#f2f2f2;padding:28px 32px;border-radius:3px}
+.data-table th,.data-table td{text-align:center}
+.pagination{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:14px}
+.avatar{width:32px;height:32px;border-radius:50%;vertical-align:middle;margin-right:8px}
+.layui-layout-admin .layui-header .brand{float:left;color:#009688;font-size:24px;line-height:60px;padding-left:24px}
+</style></head>
+<body class="layui-layout-body"><div class="layui-layout layui-layout-admin">
+<div class="layui-header"><div class="brand">图 书 管 理 系 统</div><ul class="layui-nav layui-layout-right">
+<li class="layui-nav-item"><a href="javascript:;"><img src="/images/user_image.jpg" class="layui-nav-img">user1</a></li>
+<li class="layui-nav-item"><a href="/userLogOut">退出登录</a></li></ul></div>
+<div class="layui-side layui-bg-black"><div class="layui-side-scroll"><ul class="layui-nav layui-nav-tree">
+<li class="layui-nav-item "><a href="javascript:;">借阅管理</a><dl class="layui-nav-child">
+<dd class=""><a href="/userBorrowBookRecord">&emsp;&emsp;借书记录</a></dd>
+<dd class=""><a href="/borrowingPage">&emsp;&emsp;借阅书籍</a></dd></dl></li>
+<li class="layui-nav-item layui-nav-itemed"><a href="javascript:;">书籍管理</a><dl class="layui-nav-child">
+<dd class=""><a href="/userReturnBooksPage">&emsp;&emsp;归还书籍</a></dd>
+<dd class="layui-this"><a href="/findBookPage">&emsp;&emsp;查询书籍</a></dd></dl></li>
+<li class="layui-nav-item "><a href="/userMessagePage">个人信息</a></li></ul></div></div>
+<div class="layui-body"><div class="split"><div class="form-card"><hr class="layui-bg-blue"><h1 class="section-title">查询书籍</h1><hr class="layui-bg-blue"><form class="layui-form"><input class="layui-input" value="平凡的世界"><br><button class="layui-btn">查询</button></form></div><div><hr class="layui-bg-blue"><h1 class="section-title">查询结果</h1><hr class="layui-bg-blue"><table class="layui-table data-table"><thead><tr><th>书籍编号</th><th>书名</th><th>作者</th><th>出版社</th><th>状态</th></tr></thead><tbody>
+<tr><td>1</td><td>平凡的世界</td><td>路遥</td><td>北京出版社</td><td>不可借</td></tr><tr><td>3</td><td>数据库系统</td><td>李四</td><td>清华大学出版社</td><td>可借</td></tr></tbody></table></div></div></div></div><script src="/layui/layui.js"></script></body></html>
